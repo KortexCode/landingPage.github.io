@@ -23,11 +23,15 @@
     padding: 0;
     margin: 0;
 }
+
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
-/*Estilos del header*/
+body{
+    
+}
+/*HEADER*/
 header{
     position: relative;
     display: flex;
@@ -36,7 +40,7 @@ header{
     /* text-align: center; */
     width: 100%;
     height: 33.4rem;
-    min-width: 32rem;
+    min-width: 320px;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 header img{
@@ -48,9 +52,9 @@ header img{
 .header__title{
     align-self: center;
     width: 90%;
-    min-width: 22.8rem; 
-    max-width: 90rem; 
-    height: 21.8rem;
+    min-width: 228px; 
+    max-width: 900px; 
+    height: 218px;
     text-align: center;
 
 }
@@ -69,10 +73,10 @@ header img{
 }
 .header__title .header__button{
     position: absolute;
-    top: calc(100% - 24px);
-    left: calc(50% - 114.5px);
-    width: 229px;
-    height: 48px;
+    top: calc(100% - 2.4rem);
+    left: calc(50% - 11.45rem);
+    width: 22.9rem;
+    height: 4.8rem;
     padding: 15px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     font-size: var(--smm);
@@ -81,14 +85,130 @@ header img{
     color: var(--black);
     text-decoration: none;
 }
+/*Button's icon*/
 .header__button span{
-    /* display: inline-block; */
+    display: inline-block;
     width: 13px;
     height: 8px;
     margin-left: 13px;
     background-image: url('../assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
 }
 
+/*MAIN*/
+main{
+    
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--just-white);
+
+}
+/*Exchange section(Firts section)*/
+.exchange-container{
+    
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+.exchange-container__background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-image: url('../assets/imgs/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.exchange-container__title{
+    
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.exchange-container .exchange-container__title h2{
+    margin-bottom: 30px;
+    font-size: var(--hm);
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--black);
+}
+.exchange-container .exchange-container__title p{
+    margin-bottom: 30px;
+    font-size: var(--smm);
+    font-weight: 500;
+    line-height: 1.6rem;
+    color:#757575;
+}
+/*Exchain section table container*/
+.main-table-container{
+    width: 70%;
+    height: 25rem;
+    min-width: 240px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.currently-table .currently-table__title{
+    margin-bottom: 12px;
+    font-size: var(--mmm);
+    font-weight: 700;
+    line-height: 2.3rem;
+
+    color: var(--bitcoin-orange);
+}
+.currently-table__container{
+    width: 90%;
+    margin: 0 auto;
+    min-width: 230px;
+    max-width: 350px;
+    height: 15.6rem;
+    font-family: 'Inter', sans-serif;
+}
+.currently-table__container table{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.currently-table__container table td{
+    width: 50%;
+    font-size: var(--mm);
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.currently-table__container table td:last-of-type{
+    font-size: var(--smm);
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currently-table__container table span{
+    display: inline-block;
+    position: relative;
+    top:3px;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.currently-table__container table td .up-arrow{
+    background-image: url(../assets/icons/trending-up.svg);
+} 
+.currently-table__container table td .down-arrow{
+    background-image: url(../assets/icons/trending-down.svg);
+}  
     
 
     
