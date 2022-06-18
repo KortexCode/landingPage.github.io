@@ -379,7 +379,21 @@ main{
 }
 
 /*wildcard(third section of main)*/
+main .bitcoin-img{
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    text-align: center;
+    background: url('../assets/imgs/bitcoinbaby2x.jpg') no-repeat center/cover;
 
+}
+main .bitcoin-img h2{
+    padding-top: 5.5rem;
+    font-weight: 700;
+    font-size: var(--hm);
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
 
   
     
