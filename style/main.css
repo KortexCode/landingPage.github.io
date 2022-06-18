@@ -4,9 +4,11 @@
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
     --soft-blue: #e7f5ff;
+    --warm-black1:#201E1C;
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
+    --shadow-grey:#808080;
     --off-white: #faf8f7;
     --just-white: #fff;
     /*font-sizes*/
@@ -104,7 +106,7 @@ main{
     background-color: var(--just-white);
 
 }
-/*Exchange section(Firts section)*/
+/*Exchange section(Firts section of main)*/
 .exchange-container{
     
     width: 100%;
@@ -146,7 +148,7 @@ main{
     line-height: 1.6rem;
     color:#757575;
 }
-/*Exchain section tables container*/
+/*Exchain section - tables container*/
 .main-table-container{
     width: 70%;
     height: 25rem;
@@ -288,6 +290,104 @@ main{
     color: var(--warm-black);
     
 }
+
+/*Main - product details(second section of main)*/
+
+.product-detail{
+    position:relative;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    padding: 6.4rem 1.6rem 4.7rem 1.6rem;
+    background-color: var(--warm-black1);
+}
+.produc-detail__batatabit-logo{
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 19px);
+    width: 38px;
+    height: 25px;
+    background-image: url(../assets/icons/batata.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.product-detail__title{
+    width: 100%;
+    min-width: 288px;
+    height: auto;
+    margin-bottom: 2.6rem;
+    text-align: center;
+}
+.product-detail__title h2{
+    font-size: var(--hm);
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-bottom: 2.4rem;
+    color: var(--just-white);
+}
+.product-detail__title p{
+    font-weight: 500;
+    font-size: var(--smm);
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail__article-card{
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    margin: 1.6rem auto;
+    padding: 2rem 1.6rem;
+    min-height: 15.2rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    background-color: var(--warm-black);
+}
+/*General styles for icons*/
+.product-detail__article-card .icon-cart{
+    display: inline-block;
+    width: 2rem;
+    height: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+.product-detail__article-card .clock{
+    background: url('../assets/icons/clock.svg') no-repeat center/cover;
+}
+.product-detail__article-card .eyes{
+    background: url('../assets/icons/eye.svg') no-repeat center/cover;
+}
+.product-detail__article-card .dollar{
+    background: url('../assets/icons/dollar-sign.svg') no-repeat center/cover;
+}
+.product-detail__article-card .check{
+    background: url('../assets/icons/check-circle.svg') no-repeat center/cover;
+}
+/*Card's contain*/
+.product-detail__article-card p:nth-child(2){
+    font-weight: 700;
+    font-size: var(--mmm);
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--just-white);
+}
+.product-detail__article-card p:nth-child(3){
+    font-weight: 500;
+    font-size: var(--smm);
+    line-height: 1.8rem;
+    color: var(--shadow-grey);
+}
+
+/*wildcard(third section of main)*/
+
+
+  
+    
+    
+
+
+    
+
 
     
    
