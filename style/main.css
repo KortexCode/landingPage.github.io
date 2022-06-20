@@ -419,8 +419,30 @@ main .bitcoin-img h2{
     color: #757575;
 }
 /*card-container*/
+.plans-container__section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 29rem;
+    padding: 0 1rem;  
+}
+.plans-container__section--slider{
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: proximity;
+}  
+.plans-container__section--slider::-webkit-scrollbar{
+    background-color: var(--soft-orange);/*barra de fondo*/
+    height: 3px;
+}  
+.plans-container__section--slider::-webkit-scrollbar-thumb{
+    background-color: var(--bitcoin-orange);/*barra de posición*/
+}  
+
+/*articles*/
 .plans-container__article{
     position:relative;
+    scroll-snap-align: x center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
@@ -474,6 +496,30 @@ main .bitcoin-img h2{
     color: #757575;
     line-height: 1.5rem;
 }
+.plans-container__article .plans-info button{
+    width:80%;
+    max-width: 200px;
+    height: 4.8rem;
+    margin-top: 1.6rem;
+    border: 2px solid var(--bitcoin-orange);
+    font-size: var(--smm);
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.8rem;
+    background: #FAF8F7;
+    color: var(--warm-black);
+}
+.plans-container__article .plans-info button span{
+    display: inline-block;
+    margin-left: 1rem;
+    width:2rem;
+    height: 2rem;
+    vertical-align: -5.5px;
+    background: url('../assets/icons/orange-right-arrow.svg') no-repeat center/cover;
+   
+    
+}
+   
 
 
     
