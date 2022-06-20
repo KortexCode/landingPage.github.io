@@ -146,13 +146,17 @@ main{
 }
 /*Exchain section - tables container*/
 .main-table-container{
-    width: 70%;
-    height: 25rem;
-    min-width: 240px;
-    max-width: 500px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    padding: 0 1.6rem;
+    width: 100%;
+    min-width: 320px;
+   
 }
 /*Exchain section currently table*/
+
 .currently-table .currently-table__title{
     text-align: start;
     margin-bottom: 12px;
@@ -226,6 +230,7 @@ main{
     color: var(--warm-black);
 }
 /*Exchain section next table*/
+
 .next-table .next-table__title{
     text-align: start;
     margin-left: 30px;
@@ -245,11 +250,11 @@ main{
 }
 .table{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 3.9rem;
+    grid-template-columns: 11.2rem 11.2rem;
+    grid-auto-rows: 3.7rem;
     gap: 0.2rem;
    
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
 }  
 .table .table__item{
@@ -275,7 +280,7 @@ main{
     width: 18rem;
     height: 3.1rem;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    margin-top: 1.7rem;
     padding: 0.8rem;
     border-radius: 8px;
     background-color: var(--soft-blue);
@@ -395,7 +400,7 @@ main .bitcoin-img h2{
 .plans-container{
 
     min-width: 320px;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     text-align: center;
     background: #E5E5E5;
 }
@@ -421,7 +426,7 @@ main .bitcoin-img h2{
 /*card-container*/
 .plans-container__section{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     height: 29rem;
     padding: 0 1rem;  
@@ -444,7 +449,7 @@ main .bitcoin-img h2{
     position:relative;
     scroll-snap-align: x center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 25rem;
     margin: 0 auto 0;
@@ -516,9 +521,46 @@ main .bitcoin-img h2{
     height: 2rem;
     vertical-align: -5.5px;
     background: url('../assets/icons/orange-right-arrow.svg') no-repeat center/cover;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    min-width: 320px;
+    height: 15rem;
+    background: var(--bitcoin-orange);
+    justify-content: center;
+    align-items: center;
+
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.left-side ul{
+    font-weight: 500;
+    font-size: var(--smm);
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left-side ul li{
+    margin-top: 0.8rem;
+}
+.left-side ul li a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+.right-side p{
+    margin-top: 0.8rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange); 
+}
    
     
-}
    
 
 
