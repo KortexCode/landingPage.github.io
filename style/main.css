@@ -75,7 +75,7 @@ header img{
     left: calc(50% - 11.45rem);
     width: 22.9rem;
     height: 4.8rem;
-    padding: 15px;
+    padding: 1.5rem;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     font-size: var(--smm);
     font-weight: bold;
@@ -86,9 +86,9 @@ header img{
 /*Button's icon*/
 .header__button span{
     display: inline-block;
-    width: 13px;
-    height: 8px;
-    margin-left: 13px;
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1.3rem;
     background-image: url('../assets/icons/down-arrow.svg');
     background-repeat: no-repeat;
 }
